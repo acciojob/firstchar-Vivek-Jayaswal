@@ -1,10 +1,11 @@
 function firstChar(text) {
   // your code here
-	if (text === " " || text === "") {
+	let str = text.trim();
+	if (str === "") {
 		return '';
 	}
 	else{
-		return text.charAt(0);
+		return str.charAt(0);
 	}
 }
 
@@ -12,4 +13,3 @@ function firstChar(text) {
 
 const text = prompt("Enter text:");
 alert(firstChar(text));
-
